@@ -57,34 +57,37 @@ Intervals (start, end):
 
 ## Example Output
 
+The program clears the screen and redraws the dashboard at each step, so you
+see the selection process unfold live.  The final frame looks like:
+
 ```
-=============================================
-   Interval Scheduling – Greedy Algorithm
-=============================================
+====================================================
+   Interval Scheduling — Greedy Algorithm
+====================================================
 
-Total intervals provided: 12
+        0                    8                    16
+        +--------------------+--------------------+-
 
-All intervals (start, end):
+   1. ( 1, 4) │   ███████  ✓ selected
+   2. ( 3, 5) │        ░░░░░  ✗ overlaps
+   3. ( 0, 6) │░░░░░░░░░░░░░░░░  ✗ overlaps
+   4. ( 5, 7) │             █████  ✓ selected
+   5. ( 3, 9) │        ░░░░░░░░░░░░░░░░  ✗ overlaps
+   6. ( 5, 9) │             ░░░░░░░░░░░  ✗ overlaps
+   7. ( 6,10) │                ░░░░░░░░░░  ✗ overlaps
+   8. ( 8,11) │                     ████████  ✓ selected
+   9. ( 8,12) │                     ░░░░░░░░░░░  ✗ overlaps
+  10. ( 2,14) │     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  ✗ overlaps
+  11. (10,15) │                          ░░░░░░░░░░░░░  ✗ overlaps
+  12. (12,16) │                                ██████████  ✓ selected
+
+  ► Done!  4 non-overlapping intervals selected.
+
+  Selected intervals:
     1. (1, 4)
-    2. (3, 5)
-    3. (0, 6)
-    4. (5, 7)
-    5. (3, 9)
-    6. (5, 9)
-    7. (6, 10)
-    8. (8, 11)
-    9. (8, 12)
-   10. (2, 14)
-   11. (12, 16)
-   12. (10, 15)
-
-Selected non-overlapping intervals (4 chosen):
-  1. (1, 4)
-  2. (5, 7)
-  3. (8, 11)
-  4. (12, 16)
-
-Done.
+    2. (5, 7)
+    3. (8, 11)
+    4. (12, 16)
 ```
 
 ---
