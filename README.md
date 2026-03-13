@@ -1,14 +1,6 @@
 # interval-scheduling-greedy
 
-A Python implementation of the **Interval Scheduling Maximization** problem using a greedy algorithm.
-
-## What it does
-
-Given a set of intervals (each with a start and end time), it selects the **maximum number of non-overlapping intervals** — the classic "activity selection" problem.
-
-## How it works
-
-Uses the **Earliest Deadline First** strategy: sort intervals by end time, then greedily pick each interval that starts after the last selected one ends.
+A Python greedy algorithm that selects the maximum set of non-overlapping intervals from a given list using the Earliest Deadline First strategy.
 
 ## Usage
 
