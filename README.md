@@ -11,6 +11,16 @@ A common real-world example is booking as many events as possible in a single le
 
 ---
 
+## Video Demo
+
+<video src="IntervalScheduling.mp4" controls width="700">
+  Your browser does not support the video tag.
+</video>
+
+> **Note:** If the video does not display above, you can view it directly in the repository: [IntervalScheduling.mp4](IntervalScheduling.mp4)
+
+---
+
 ## Greedy Strategy
 
 The algorithm uses the **Earliest Finish Time** greedy rule:
